@@ -1,6 +1,6 @@
 name: Docker Image CI
 on:
-  workdispatch:
+  workflow_dispatch:
     branches: [ main ]
 
 jobs:
