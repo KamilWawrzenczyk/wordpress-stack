@@ -20,11 +20,11 @@ jobs:
           target: "~/app"
 
       - name: Deployment aplikacji przez SSH (docker-stack)
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        password: ${{ secrets.SSH_PASSWORD }}
-        script: |
-          cd ~/app
-          docker stack deploy -c docker-stack.yml wordpress02
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd ~/app
+            docker stack deploy -c docker-stack.yml wordpress02
