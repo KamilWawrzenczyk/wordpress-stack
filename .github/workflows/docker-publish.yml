@@ -1,6 +1,6 @@
 name: Docker Image CI
 on:
-  push:
+  workdispatch:
     branches: [ main ]
 
 jobs:
