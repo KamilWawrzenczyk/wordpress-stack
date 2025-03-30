@@ -2,10 +2,10 @@ services:
   wordpress02:
     image: wordpress:latest
     environment:
-      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_HOST: db2:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: secure_pass
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_NAME: wordpress02
     volumes:
       - wordpress_data:/var/www/html
     deploy:
